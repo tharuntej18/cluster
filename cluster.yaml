@@ -3,7 +3,7 @@ kind: ClusterConfig
 
 metadata:
   name: step-eks-cluster
-  region: ap-northeast-1
+  region: ap-south-1
 
 vpc:
   id: "vpc-0bb9884f025057768"
@@ -20,7 +20,6 @@ managedNodeGroups:
     labels: { role: builders }
     minSize: 2
     maxSize: 4
-  
     tags:
       Name: ng-db
   - name: ng-spot
@@ -29,6 +28,5 @@ managedNodeGroups:
     minSize: 3
     maxSize: 6
     spot: true
-   
     tags:
       Name: ng-spot
