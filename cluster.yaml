@@ -2,7 +2,7 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: step-eks-cluster
+  name: step-cluster
   region: ap-south-1
 
 vpc:
