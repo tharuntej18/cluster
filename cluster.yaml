@@ -2,17 +2,17 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: step-cluster
-  region: ap-south-1
+  name: cluster-argocd
+  region: us-west-2
 
 vpc:
-  id: "vpc-09241d3b58639130c"
+  id: "vpc-008dd2f0293eade92"
   cidr: "172.31.0.0/16"
   subnets:
     public:
-      ap-south-1c: { id: subnet-094c6e7ef7e2308e3 }
-      ap-south-1a: { id: subnet-0af6f49fa7a735037 }
-      ap-south-1b: { id: subnet-0e905059eb2ad053e }
+      us-west-2a: { id: subnet-0de6c9b304a2762c7 }
+      us-west-2b: { id: subnet-0ec3db041a0e06222 }
+      us-west-2c: { id: subnet-013927d5402d56f41 }
 
 managedNodeGroups:
   - name: ng-db
